@@ -2,9 +2,9 @@
 
 using namespace std;
 
+int ano_nasci, ano_atual, idade;
 int main(){
-	int ano_nasci, ano_atual, idade;
-	
+		
 	cout<<"Qual o seu ano de nascimento?";
 	cin >> ano_nasci;
 
