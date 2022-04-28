@@ -3,7 +3,7 @@
 
 using namespace std;
 
-int num1, num2, escolha, som, sub, mult, poten, med;
+int num1, num2, escolha, som, sub, mult, poten, med, res_divisao;
 double div;
 int main()
 {
@@ -47,8 +47,8 @@ int main()
 	 break;	
 	 
 	 case 5: 
-		mult = num1 % num2;
-		cout<<"O resto da divisao de "<<num1<< " por "<<num2<<" eh igual ah "<<mult;
+		res_divisao = num1 % num2;
+		cout<<"O resto da divisao de "<<num1<< " por "<<num2<<" eh igual ah "<<res_divisao;
 	 break;	
 	 
 	 case 6: 

@@ -27,12 +27,12 @@ int main()
   	cout<<"Aluno aprovado";
   	 
   }else{
-  	cout<<"Digite a nota do exame final do aluno: ";
+  	cout<<"\n"<<"Digite a nota do exame final do aluno: ";
   	cin>> n_final;	 
   	 
   	if(n_final >= 5){
   	 	
-  	 	cout<<"Aluno aprovado por exame final";
+  	 	cout<<"\n"<<"Aluno aprovado por exame final";
   	 	
 	}else{
 	   	  

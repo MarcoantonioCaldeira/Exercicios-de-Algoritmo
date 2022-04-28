@@ -12,13 +12,19 @@ int main()
   {
     cout<<"F1";	
     
-  } else if(num > 10 && num <= 100){
+  }else{
   	
-        cout<<"F2";	
-        
-	    }else if(num > 100){
-	        
-		   cout<<"F3"; 	    	
-	  	
-	    }
+  	    if(num > 10 && num <= 100){
+  	
+        t<<"F2";
+  	
+    }else{
+	   		if(num > 100){
+		        
+			cout<<"F3"; 	    	
+		  	
+	   		}
+		} 	    
+   }
+   return 0;
 }

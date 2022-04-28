@@ -11,5 +11,7 @@ int main()
 	if(letra == 'a' || letra =='e' || letra =='i' || letra == 'o' || letra == 'u')
 	{
 		cout<<"O caractere eh igual ah: "<<letra;
+	}else{
+		cout<<"Esse caractere nao eh a,e,i, ou u";
 	}
 }
