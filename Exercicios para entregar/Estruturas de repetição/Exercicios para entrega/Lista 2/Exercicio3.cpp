@@ -2,43 +2,33 @@
 
 using namespace std;
 
-double sal_bruto, num_dependentes, desconto_inss, sal_liquido;
+double cap_total, carga_total,p1,p2,p3,p4,p5;
 int main()
 {
-	cout<<"Qual o salario bruto do funcionario?: ";
-	cin>>sal_bruto;	
+	cout<<"Qual o peso da primeira pessoa?: ";
+	cin>>p1;
 	
-	cout<<"Qual o numero de dependentes que o funcionario possui?: ";
-	cin>>num_dependentes;
+	cout<<"Qual o peso da segunda pessoa?: ";
+	cin>>p2;
 	
-	if(sal_bruto<=670)
+	cout<<"Qual o peso da terceira pessoa?: ";
+	cin>>p3;
+	
+	cout<<"Qual o peso da quarta pessoa?: ";
+	cin>>p4;
+	
+	cout<<"Qual o peso da quinta pessoa?: ";
+	cin>>p5;
+	
+	carga_total = p1 + p2 + p3 + p4 + p5;
+	
+	cout<<"Qual a capacidade total do elevador?: ";
+	cin>>cap_total;
+	
+	if(carga_total<=cap_total)
 	{
-		desconto_inss = (sal_bruto*8)/100;
-		sal_liquido = sal_bruto - desconto_inss + (15 * num_dependentes) + 40 + 100;
-		cout<<"O salario liquido eh: "<<sal_liquido;
+		cout<<"O elevador esta liberado para subir";
 	}else{
-		
-			if(sal_bruto>=671 && sal_bruto<=1500)
-			{
-			   desconto_inss = (sal_bruto*9)/100;
-			   sal_liquido = sal_bruto - desconto_inss + (15 * num_dependentes) + 40 + 100;
-		       cout<<"O salario liquido eh: "<<sal_liquido;		
-			}else{
-				
-					if(sal_bruto>=1500 && sal_bruto<=3500)
-					{
-					   desconto_inss = (sal_bruto*10)/100;
-			           sal_liquido = sal_bruto - desconto_inss + (15 * num_dependentes) + 40 + 100;
-		               cout<<"O salario liquido eh: "<<sal_liquido;	
-					}else{
-						
-							if(sal_bruto>3500)
-							{
-							   desconto_inss = (sal_bruto*11)/100;
-			                   sal_liquido = sal_bruto - desconto_inss + (15 * num_dependentes) + 40 + 100;
-		                       cout<<"O salario liquido eh: "<<sal_liquido;	
-							}
-					     }
-			     }
-	     }
+			cout<<"O elevador nao esta liberado para subir";
+		 }
 }
