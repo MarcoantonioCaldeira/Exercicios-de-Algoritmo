@@ -3,7 +3,7 @@
 using namespace std;
 
 
-int n1, n2, media, Cont, num_aluno, soma_classe, soma_nota, media_total;
+int n1, n2, media, Cont, num_aluno, soma_classe, soma_nota, media_total,aprovado=0, exame=0, reprovado=0;
 int main(){
 	setlocale(LC_ALL,"Portuguese");
 	
@@ -30,19 +30,22 @@ int main(){
 		if(media<=3)
 		{
 			cout<<endl<<"Aluno reprovado";
+			reprovado++;
 		}else{
 			if(media>3 && media<7)
 			{
-				cout<<endl<<"Aluno em exame";	
+				cout<<endl<<"Aluno em exame";
+				exame++;	
 			}else{
-				if(media>=7)
-				{
 					cout<<endl<<"Aluno aprovado";
-				}
+					aprovado++;
 			}
 		}
 	soma_classe = soma_classe + soma_nota;	
     }
     media_total = soma_classe/12;
 	cout<<endl<<"A media total da sala eh: "<<media_total;
+	cout<<endl<<"O total de alunos aprovado eh: "<<aprovado;
+	cout<<endl<<"O total de alunos reprovados eh: "<<reprovado;
+	cout<<endl<<"O total de alunos em exame eh: "<<exame;
 }
